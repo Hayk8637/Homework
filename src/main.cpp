@@ -4,8 +4,17 @@
 #include <test.h>
 using namespace std;
 int main(){
-    std::string a = "abc";
-    int n =4;
-    cout<<unit_test(a, n)<<endl;
+    string str ;
+    int n;
+    while(true){
+        cin>>str;
+        if(str=="break"){
+            break;
+        }
+        cin>>n;
+        cout<<unit_test(str,n)<<endl;
+    }
+    ;
+
     return 0;
 }
