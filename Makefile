@@ -18,7 +18,9 @@ lib/encoder.so,decoder.so,test.a: obj/encoder.o,decoder.o,test.o
 	@echo "Create: test.a"
 link: lib/encoder.so,decoder.so,test.a
 	@g++ src/main.cpp -I inc -L ./lib -ltest -ldecoder -lencoder  -o bin/main.out
-	bin/main.out
+	@echo "Link is create"
+	@bin/main.out
+	@echo "main.out is create"
 clear:
 	@rm -rf bin obj lib
 	@echo "Deleted"
